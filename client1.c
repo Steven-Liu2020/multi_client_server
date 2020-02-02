@@ -38,7 +38,7 @@ int main(int argc,char *argv[])//Client Synchronous Blocking
                 err_log("Client connent() failed");
         while (1){
                 memset(send_buff,0,sizeof(send_buff));
-                printf("Input: ");
+                printf("Input('end' to exit): ");
                 fgets(send_buff,BUFFER_SIZE,stdin);
                 if (strncmp(send_buff,"end",3) == 0)
                         break;
